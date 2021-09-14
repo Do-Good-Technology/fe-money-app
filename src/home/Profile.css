@@ -1,0 +1,63 @@
+
+.profile-background {
+  width: 100%;
+  height: 168px;
+}
+
+.profile-photo {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 32px;
+  
+  border-radius: 50%;
+  border: 4px solid white;
+
+  width: 120px;
+  height: 120px;
+}
+
+.profile-desk {
+  margin-top: 80px;
+  margin-left: 32px;
+}
+
+.profile-desk p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-name {
+  font-weight: 700;
+  color: #012D3B;
+}
+
+.profile-email {
+  font-weight: 400;
+  margin-top: 4px;
+  color: #8E8E8E;
+}
+
+.profile-line {
+  margin: 40px 32px;
+  color: #E6E6E6;
+  opacity: 0.3;
+}
+
+.profile-menu {
+  display: flex;
+  margin-left: 32px;
+  margin-bottom: 48px;
+}
+
+
+.profile-menu-title {
+  margin: auto;
+  margin-left: 12px;
+  font-size: 16px;
+  color: #363636;
+  font-weight: 400;
+}
+
+
+
+

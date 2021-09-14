@@ -1,0 +1,275 @@
+@import "~antd-mobile/dist/antd-mobile.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.transaction-tab {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header  */
+
+.home-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.greetings,
+.greetings-sub {
+  font-family: "Poppins", sans-serif;
+}
+
+.greetings {
+  font-weight: 700;
+  margin-top: 40px;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.greetings-sub {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.header-avatar {
+  margin-top: 40px;
+  width: 49px;
+  height: 49px;
+}
+
+/* Total balance */
+
+.totalBalance {
+  width: 320px;
+  height: 101px;
+  margin: auto;
+  margin-top: 15px;
+
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.tb-content-wrap {
+  display: flex;
+
+  padding-top: 10px;
+}
+
+.tb-icon {
+  width: 80px;
+  height: 80px;
+  padding-left: 16px;
+  padding-right: 13px;
+}
+
+.tb-desc {
+  padding-top: 13px;
+}
+
+.tb-desc1 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.tb-desc2 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Transaction */
+
+.transaction-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 26px;
+  margin-left: 32px;
+}
+
+.transaction-month {
+  text-align: center;
+}
+
+/* Date Picker */
+
+.ant-picker-suffix,
+.ant-picker-clear {
+  display: none;
+}
+
+.ts-date {
+  border: none !important;
+}
+
+.ant-picker-input > input {
+  font-size: 18px !important;
+  font-weight: 400;
+  text-align: center !important;
+}
+
+/* Transaction conclusion */
+
+.transaction-conclusion {
+  width: 341px;
+  height: 118px;
+  margin: auto;
+  margin-top: 15px;
+  top: 356px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05); */
+  border-radius: 10px;
+}
+
+.trans-con-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+
+  font-size: 16px;
+  font-weight: 300;
+  color: #737070;
+}
+
+.trans-con-wrap p {
+  margin-bottom: 5px;
+}
+
+.trans-con-left {
+  margin-left: 20px;
+}
+
+.trans-con-right {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.trans-con-total {
+  border-top: 1px solid #434343;
+  font-weight: 400;
+  color: #434343;
+}
+
+/* Transaction content */
+
+.ts-content {
+  width: 314px;
+  height: 211px;
+  margin: auto;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.ts-content-header-wrap {
+  width: 314px;
+  height: 78px;
+  margin: auto;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.ts-content-header {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* .ts-content-header p {
+    margin-bottom: 0px;
+
+} */
+
+
+.ts-content-header-date {
+  font-size: 35px;
+  font-weight: 400;
+  margin-right: 10px;
+  color: #323232;
+}
+
+.ts-content-header-monthDay {
+  margin-top: 3px;
+  color: #4d4a4a;
+}
+
+.ts-content-header-monthDay p {
+  margin-bottom: 0px;
+}
+
+.ts-content-header-day {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.ts-content-header-month {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.ts-content-header-total {
+  margin: auto;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #737070;
+}
+
+.ts-content-item {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item-icon {
+  margin-left: 12px;
+}
+
+.itemDesk-wrap {
+  width: 180px;
+}
+
+.itemDesk-wrap p {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.item-category {
+  font-weight: 400;
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+.item-note {
+  color: #A3A2A2;
+  font-size: 13px;
+}
+
+.item-price {
+  text-align: right;
+  margin-top: 14px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #737070;
+}

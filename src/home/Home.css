@@ -1,0 +1,22 @@
+@import "~antd-mobile/dist/antd-mobile.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+/* Tabbar */
+
+.am-tab-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.am-tab-bar-bar {
+  height: 60px;
+}
