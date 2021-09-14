@@ -15,7 +15,7 @@ Frontend using React Js (Typescript) for Money App web application. This applica
 Clone the project
 
 ```bash
-  git clone https://github.com/Do-Good-Technology/fe-money-app.git
+  git clone (link https)
 ```
 
 Go to the project directory
