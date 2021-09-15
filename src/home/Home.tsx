@@ -8,6 +8,16 @@ import profile from "../aset/profile.svg";
 import profileSelected from "../aset/profileSelected.svg";
 import addTransaction from "../aset/addTransaction.svg";
 
+import tabbarHome from "../aset/tabbarHome.svg";
+import tabbarWallet from "../aset/tabbarWallet.svg";
+import tabbarAccount from "../aset/tabbarAccount.svg";
+import tabbarHomeActive from "../aset/tabbarHomeActive.svg";
+import tabbarWalletActive from "../aset/tabbarWalletActive.svg";
+import tabbarAccountActive from "../aset/tabbarAccountActive.svg";
+
+
+
+
 import { TabBar } from "antd-mobile";
 
 import "./Home.css";
@@ -43,18 +53,20 @@ const Home = () => {
             icon={
               <div
                 style={{
-                  width: "22px",
-                  height: "22px",
-                  background: `url(${home}) center center /  21px 21px no-repeat`,
+                  width: "44px",
+                  height: "44px",
+                  marginTop: "10px",
+                  background: `url(${tabbarHome}) center center /  43px 43px no-repeat`,
                 }}
               />
             }
             selectedIcon={
               <div
                 style={{
-                  width: "22px",
-                  height: "22px",
-                  background: `url(${homeSelected}) center center /  21px 21px no-repeat`,
+                  width: "44px",
+                  height: "44px",
+                  marginTop: "10px",
+                  background: `url(${tabbarHomeActive}) center center /  43px 43px no-repeat`,
                 }}
               />
             }
@@ -71,26 +83,26 @@ const Home = () => {
             icon={
               <div
                 style={{
-                  width: "85px",
-                  height: "85px",
-                  marginBottom: "25px",
-                  background: `url(${addTransaction}) center center /  85px 85px no-repeat`,
+                  width: "44px",
+                  height: "44px",
+                  marginTop: "10px",
+                  background: `url(${tabbarWallet}) center center /  43px 43px no-repeat`,
                 }}
               />
             }
             selectedIcon={
               <div
                 style={{
-                  width: "85px",
-                  height: "85px",
-                  marginBottom: "25px",
-                  background: `url(${addTransaction}) center center /  85px 85px no-repeat`,
+                  width: "44px",
+                  height: "44px",
+                  marginTop: "10px",
+                  background: `url(${tabbarWalletActive}) center center /  43px 43px no-repeat`,
                 }}
               />
             }
             key="addTransaction"
             onPress={() => {
-              history.push("/addtransaction");
+              // history.push("/addtransaction");
             }}
             data-seed="logId1"
           ></TabBar.Item>
@@ -98,18 +110,20 @@ const Home = () => {
             icon={
               <div
                 style={{
-                  width: "22px",
-                  height: "22px",
-                  background: `url(${profile}) center center /  21px 21px no-repeat`,
+                  width: "44px",
+                  height: "44px",
+                  marginTop: "10px",
+                  background: `url(${tabbarAccount}) center center /  43px 43px no-repeat`,
                 }}
               />
             }
             selectedIcon={
               <div
                 style={{
-                  width: "22px",
-                  height: "22px",
-                  background: `url(${profileSelected}) center center /  21px 21px no-repeat`,
+                  width: "44px",
+                  height: "44px",
+                  marginTop: "10px",
+                  background: `url(${tabbarAccountActive}) center center /  43px 43px no-repeat`,
                 }}
               />
             }
