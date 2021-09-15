@@ -102,7 +102,7 @@ const Home = () => {
             }
             key="addTransaction"
             onPress={() => {
-              // history.push("/addtransaction");
+              history.push("/addtransaction");
             }}
             data-seed="logId1"
           ></TabBar.Item>

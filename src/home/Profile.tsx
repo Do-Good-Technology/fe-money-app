@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 
-
 import { useHistory } from "react-router-dom";
-
-// import iconBack from "../aset/iconBack.svg";
-// import iconProfileWallet from "../aset/iconProfileWallet.svg";
-// import iconProfileSetting from "../aset/iconProfileSetting.svg";
-// import iconProfileAbout from "../aset/iconProfileAbout.svg";
-// import iconSignOut from "../aset/iconSignOut.svg";
-// import buttonInProfile from "../aset/buttonInProfile.svg";
-// import avatar from "../aset/avatar.svg";
 
 import profileHeader from "../aset/profileHeader.svg";
 import profileIconEditProfile from "../aset/profileIconEditProfile.svg";
@@ -24,7 +15,11 @@ function Profile() {
   return (
     <div>
       <div className="profile-header">
-        <img className="profile-photo" src="https://avatars.dicebear.com/api/initials/:Nafian%20Hanandyawan.svg " alt="" />
+        <img
+          className="profile-photo"
+          src="https://avatars.dicebear.com/api/initials/:Nafian%20Hanandyawan.svg "
+          alt=""
+        />
         <img className="profile-background" src={profileHeader} alt="" />
       </div>
       <div className="profile-desk">
@@ -32,19 +27,35 @@ function Profile() {
         <p className="profile-email">nafianhhh@gmail.com</p>
       </div>
       <hr className="profile-line" />
-      <div className="profile-menu">
-        <img className="profile-menu-icon" src={profileIconEditProfile } alt="icon edit profile" />
+      <div
+        className="profile-menu"
+        onClick={() => {
+          history.push("/accountSettings");
+        }}
+      >
+        <img
+          className="profile-menu-icon"
+          src={profileIconEditProfile}
+          alt="icon edit profile"
+        />
         <p className="profile-menu-title">Edit Account</p>
       </div>
       <div className="profile-menu">
-        <img className="profile-menu-icon" src={profileIconSetting } alt="icon setting" />
+        <img
+          className="profile-menu-icon"
+          src={profileIconSetting}
+          alt="icon setting"
+        />
         <p className="profile-menu-title">Settings</p>
       </div>
       <div className="profile-menu">
-        <img className="profile-menu-icon" src={profileIconInfo } alt="icon about" />
+        <img
+          className="profile-menu-icon"
+          src={profileIconInfo}
+          alt="icon about"
+        />
         <p className="profile-menu-title">About MoneyApp</p>
       </div>
-      
     </div>
   );
 }
