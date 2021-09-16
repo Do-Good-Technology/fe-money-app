@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import ChooseCategory from "./ChooseCategory";
 import ChooseWallet from "./ChooseWallet";
-import AccountSettings from "./profile/AccounSettings";
+import AccountSettings from "./profile/AccountSettings";
 import Addtransaction from "./home/Addtransaction";
 import Register from "./auth/Register";
 import Login from "./auth/Login";
