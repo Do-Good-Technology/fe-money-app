@@ -11,8 +11,6 @@ import "./AccountSettings.css";
 function AccountSettings() {
   let history = useHistory();
 
-  // abs
-
   const [form] = Form.useForm();
 
   return (

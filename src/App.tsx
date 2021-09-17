@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ChooseCategory from "./ChooseCategory";
 import ChooseWallet from "./ChooseWallet";
 import AccountSettings from "./profile/AccounSettings";
+import ChangePassword from "./profile/ChangePassword";
+import Settings from "./profile/Settings";
 import Addtransaction from "./home/Addtransaction";
 import Register from "./auth/Register";
 import Login from "./auth/Login";
@@ -16,6 +18,12 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/changePassword">
+            <ChangePassword />
+          </Route>
+          <Route path="/settings">
+            <Settings />
+          </Route>
           <Route path="/accountSettings">
             <AccountSettings />
           </Route>
