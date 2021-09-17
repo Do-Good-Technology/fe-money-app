@@ -1,17 +1,41 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-
 import { Form, Input, Button } from "antd";
 import { NavBar } from "antd-mobile";
+import axios from "axios";
 
 import iconBack from "../aset/iconBack.svg";
+
+import UrlApi from "../UrlApi";
 
 import "./AccountSettings.css";
 
 function AccountSettings() {
   let history = useHistory();
-
   const [form] = Form.useForm();
+  const qs = require("qs");
+
+  const onFinish = (values: any) => {
+    console.log("values", values);
+    apiEditAccount(values);
+  };
+
+  const apiEditAccount = async (values: any) => {
+    const keyValue = {
+      id_user: "7",
+      name_user: values.name,
+      email_user: values.email,
+    };
+    try {
+      const data = await axios.post(
+        `${UrlApi}settings/edit-account`,
+        qs.stringify(keyValue)
+      );
+      console.log("success", data);
+    } catch {
+      console.log("error");
+    }
+  };
 
   return (
     <div>
@@ -33,22 +57,31 @@ function AccountSettings() {
           alt=""
         />
       </div>
-      <Form className="form-edit" layout="horizontal" form={form}>
-        <Form.Item label="Name">
+      <Form
+        className="form-edit"
+        layout="horizontal"
+        form={form}
+        onFinish={onFinish}
+        initialValues={{
+          'name': 'Nafian Hanandyawan',
+          'email': 'nafianhhh@gmail.com'
+        }}
+      >
+        <Form.Item label="Name" name="name">
           <Input
-            defaultValue="Nafian Hanandyawan"
             placeholder="Insert new name"
           />
         </Form.Item>
-        <Form.Item label="Email">
+        <Form.Item label="Email" name="email">
           <Input
-            defaultValue="nafianhhh@gmail.com"
             placeholder="Insert new email"
           />
         </Form.Item>
         <Form.Item className="edit-button">
-          <Button type="primary">Save</Button>
-          <Button className="edit-button-cancel" >Cancel</Button>
+          <Button type="primary" htmlType="submit">
+            Save
+          </Button>
+          <Button className="edit-button-cancel">Cancel</Button>
         </Form.Item>
       </Form>
     </div>
