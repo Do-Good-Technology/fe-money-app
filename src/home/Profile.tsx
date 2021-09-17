@@ -40,7 +40,12 @@ function Profile() {
         />
         <p className="profile-menu-title">Edit Account</p>
       </div>
-      <div className="profile-menu">
+      <div
+        className="profile-menu"
+        onClick={() => {
+          history.push("/settings");
+        }}
+      >
         <img
           className="profile-menu-icon"
           src={profileIconSetting}
