@@ -1,3 +1,38 @@
 .logout {
-    color: #CB3A31;
+  color: #cb3a31 !important;
+}
+
+.am-modal-transparent {
+  width: 300px !important;
+  border-radius: 20px !important;
+}
+
+.am-modal-title,
+.am-modal-content {
+  font-size: 16px !important;
+  text-align: left !important;
+}
+
+.am-modal-title {
+  font-weight: 600;
+  color: #363636;
+}
+
+.am-modal-content {
+  font-weight: 400;
+  color: #626262 !important;
+}
+
+.am-modal-footer {
+  border: 0px !important;
+}
+
+.am-modal-button-group-h .am-modal-button {
+  border: 0px !important;
+  color: red;
+}
+
+.am-modal-button {
+  font-size: 16px !important;
+  border: 0px !important;
 }

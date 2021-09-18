@@ -1,15 +1,23 @@
-import { NavBar } from "antd-mobile";
+import {
+  NavBar,
+  Modal,
+  Button,
+  WhiteSpace,
+  WingBlank,
+  Toast,
+} from "antd-mobile";
 import { useHistory } from "react-router-dom";
 
 import iconBack from "../aset/iconBack.svg";
 import profileIconEditProfile from "../aset/profileIconEditProfile.svg";
 import profileIconLogout from "../aset/profileIconLogout.svg";
 
-
 import "./Settings.css";
 
 function Settings() {
   let history = useHistory();
+
+  const alert = Modal.alert;
 
   return (
     <div>
@@ -39,9 +47,12 @@ function Settings() {
       </div>
       <div
         className="profile-menu"
-        onClick={() => {
-          history.push("");
-        }}
+        onClick={() =>
+          alert("Log out", "Are you sure you want to log out?", [
+            { text: "Cancel", onPress: () => console.log("Cancel") },
+            { text: "Log out", onPress: () => console.log("Log out") },
+          ])
+        }
       >
         <img
           className="profile-menu-icon"
