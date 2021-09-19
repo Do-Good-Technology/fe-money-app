@@ -29,49 +29,6 @@ function Addtransaction() {
           Add transaction
         </NavBar>
       </div>
-      <div className="input">
-        <div className="input-wrap">
-          <p className="nominal-icon">Rp</p>
-          <Input
-            className="input-content input-nominal"
-            type="number"
-            placeholder="0"
-          />
-        </div>
-        <div className="input-wrap">
-          <img className="icon-choose" src={iconChoose} alt="icon choose" />
-          <Input
-            className="input-content"
-            type="button"
-            value="Choose category"
-          />
-        </div>
-        <div className="input-wrap">
-          <img className="icon-note" src={iconNote} alt="icon note" />
-          <Input
-            className="input-content"
-            type="text"
-            placeholder="Note"
-          />
-        </div>
-        <div className="input-wrap-date">
-          <img className="icon-date" src={iconDate} alt="icon date" />
-          <DatePicker className="input-content date-addTransaction" defaultValue={moment()} format={"dddd, MMM YY"} />
-        </div>
-        <div className="input-wrap">
-          <img className="icon-choose" src={iconChoose} alt="icon choose" />
-          <Input
-            className="input-content"
-            type="button"
-            value="Choose wallet"
-          />
-        </div>
-      </div>
-      <div className="buttonWrap-saveTransaction">
-          <button className="button-saveTransaction">
-            Save
-          </button>
-      </div>
     </div>
   );
 }
