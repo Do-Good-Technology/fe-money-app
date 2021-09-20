@@ -92,7 +92,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   margin-top: 26px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .transaction-month {
@@ -101,9 +101,13 @@ body {
 
 /* Date Picker */
 
+.ant-picker {
+  padding-left: 0px;
+}
+
 .ant-picker-suffix,
 .ant-picker-clear {
-  display: none;
+  /* display: none; */
 }
 
 .ts-date {
@@ -111,9 +115,10 @@ body {
 }
 
 .ant-picker-input > input {
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 400;
   text-align: center !important;
+  float: right;
 }
 
 /* Transaction conclusion */
@@ -201,7 +206,6 @@ body {
 
 } */
 
-
 .ts-content-header-date {
   font-size: 35px;
   font-weight: 400;
@@ -262,7 +266,7 @@ body {
 }
 
 .item-note {
-  color: #A3A2A2;
+  color: #a3a2a2;
   font-size: 13px;
 }
 

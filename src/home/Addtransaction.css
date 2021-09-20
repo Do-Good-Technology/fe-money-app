@@ -11,3 +11,27 @@
   font-weight: 500;
   margin-bottom: 30px;
 }
+
+/* choose Wallet */
+
+.chooseWallet-wrap {
+  text-align: center;
+}
+
+.cw-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #7d7d7d;
+}
+
+.cw-title {
+  margin-top: 8px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #363636;
+}

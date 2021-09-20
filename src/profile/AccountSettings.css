@@ -19,9 +19,7 @@
   margin: 0px !important;
 }
 
-
 /* Photo */
-
 
 .edit-profile-photo-wrap {
   text-align: center;
@@ -48,7 +46,7 @@
 }
 
 .ant-form-item {
-  margin-bottom: 40px !important;
+  margin-bottom: 24px !important;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
