@@ -4,6 +4,9 @@ import { useHistory } from "react-router-dom";
 
 import iconBack from "./aset/iconBack.svg";
 import icon from "./aset/icon.svg";
+import chooseWalletIconWalletGrey from "./aset/chooseWalletIconWalletGrey.svg";
+import chooseWalletIconWalletBlue from "./aset/chooseWalletIconWalletBlue.svg";
+import chooseWalletIconWalletYellow from "./aset/chooseWalletIconWalletYellow.svg";
 
 import "./ChooseWallet.css";
 
@@ -23,21 +26,41 @@ function ChooseWallet() {
           Choose wallet
         </NavBar>
       </div>
+      <p className="chooseWallet-title">To</p>
       <div className="wallet-wrap">
-          <div className="wallet-item">
-              <img className="wallet-icon" src={icon} alt="icon wallet" />
-              <div className="wallet-desc">
-                  <p className="wallet-desc-title">Black Wallet</p>
-                  <p className="wallet-desc-balance">Rp 1.350.000</p>
-              </div>
+        <div className="wallet-item">
+          <img
+            className="wallet-icon"
+            src={chooseWalletIconWalletGrey}
+            alt="icon wallet"
+          />
+          <div className="wallet-desc">
+            <p className="wallet-desc-title">Dompet real</p>
+            <p className="wallet-desc-balance">Rp 850.000</p>
           </div>
-          <div className="wallet-item">
-              <img className="wallet-icon" src={icon} alt="icon wallet" />
-              <div className="wallet-desc">
-                  <p className="wallet-desc-title">White Wallet</p>
-                  <p className="wallet-desc-balance">Rp 1.150.000</p>
-              </div>
+        </div>
+        <div className="wallet-item">
+          <img
+            className="wallet-icon"
+            src={chooseWalletIconWalletBlue}
+            alt="icon wallet"
+          />
+          <div className="wallet-desc">
+            <p className="wallet-desc-title">Rekening BCA</p>
+            <p className="wallet-desc-balance">Rp 1.150.000</p>
           </div>
+        </div>
+        <div className="wallet-item">
+          <img
+            className="wallet-icon"
+            src={chooseWalletIconWalletYellow}
+            alt="icon wallet"
+          />
+          <div className="wallet-desc">
+            <p className="wallet-desc-title">Rekening BNI</p>
+            <p className="wallet-desc-balance">Rp 2.150.000</p>
+          </div>
+        </div>
       </div>
     </div>
   );
