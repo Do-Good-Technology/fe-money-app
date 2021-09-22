@@ -4,17 +4,21 @@ import moment from "moment";
 import { useHistory } from "react-router-dom";
 
 import { NavBar } from "antd-mobile";
-import { Input, DatePicker } from "antd";
+import { DatePicker, Form, Input, Button } from "antd";
 
 import iconBack from "../aset/iconBack.svg";
-import iconChoose from "../aset/iconChoose.svg";
-import iconNote from "../aset/iconNote.svg";
-import iconDate from "../aset/iconDate.svg";
+import addTransactionIconChooseWallet from "../aset/addTransactionIconChooseWallet.svg";
 
 import "./Addtransaction.css";
 
 function Addtransaction() {
   let history = useHistory();
+
+  moment().calendar(null, {
+    sameDay: "[Today]",
+  });
+
+  const [form] = Form.useForm();
 
   return (
     <div>
@@ -29,49 +33,45 @@ function Addtransaction() {
           Add transaction
         </NavBar>
       </div>
-      <div className="input">
-        <div className="input-wrap">
-          <p className="nominal-icon">Rp</p>
-          <Input
-            className="input-content input-nominal"
-            type="number"
-            placeholder="0"
-          />
-        </div>
-        <div className="input-wrap">
-          <img className="icon-choose" src={iconChoose} alt="icon choose" />
-          <Input
-            className="input-content"
-            type="button"
-            value="Choose category"
-          />
-        </div>
-        <div className="input-wrap">
-          <img className="icon-note" src={iconNote} alt="icon note" />
-          <Input
-            className="input-content"
-            type="text"
-            placeholder="Note"
-          />
-        </div>
-        <div className="input-wrap-date">
-          <img className="icon-date" src={iconDate} alt="icon date" />
-          <DatePicker className="input-content date-addTransaction" defaultValue={moment()} format={"dddd, MMM YY"} />
-        </div>
-        <div className="input-wrap">
-          <img className="icon-choose" src={iconChoose} alt="icon choose" />
-          <Input
-            className="input-content"
-            type="button"
-            value="Choose wallet"
-          />
-        </div>
+      <div className="chooseWallet-wrap">
+        <p className="cw-label">Choose wallet</p>
+        <img
+          className="cw-img"
+          src={addTransactionIconChooseWallet}
+          alt="icon choose wallet"
+        />
+        <p className="cw-title">Rekening BCA</p>
       </div>
-      <div className="buttonWrap-saveTransaction">
-          <button className="button-saveTransaction">
+
+      <Form
+        className="form-edit"
+        layout="horizontal"
+        form={form}
+        // onFinish={onFinish}
+        initialValues={{
+          name: "Nafian Hanandyawan",
+          email: "nafianhhh@gmail.com",
+        }}
+      >
+        <Form.Item label="Nominal" name="nominal">
+          <Input prefix="Rp " type="number" placeholder="0" />
+        </Form.Item>
+        <Form.Item label="Date" name="date">
+          <DatePicker
+            className="input-content date-addTransaction"
+            defaultValue={moment()}
+            format={"dddd, MMM YY"}
+          />
+        </Form.Item>
+        <Form.Item label="Category" name="category">
+          <Input defaultValue="Choose Category" />
+        </Form.Item>
+        <Form.Item className="edit-button">
+          <Button type="primary" htmlType="submit">
             Save
-          </button>
-      </div>
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
   );
 }

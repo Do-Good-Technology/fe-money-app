@@ -1,24 +1,18 @@
-.mainCategory {
-  margin-left: 36px;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  margin-top: 25px;
-}
-
-.subCategory {
+.category {
   display: flex;
   font-weight: 400;
-  margin-bottom: 17px;
+  margin-bottom: 28px;
+  margin-left: 32px;
 }
 
-.subCategory-icon {
-  width: 35px;
-  height: 35px;
+.category-icon {
+  width: 52px;
+  height: 52px;
   margin-right: 13px;
 }
 
-.subCategory-title {
-    margin: auto 0;
-
+.category-title {
+  margin: auto 0;
+  color: #363636;
+  font-size: 16px;
 }

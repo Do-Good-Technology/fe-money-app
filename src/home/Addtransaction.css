@@ -12,77 +12,26 @@
   margin-bottom: 30px;
 }
 
-.input-wrap {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  margin: auto;
-  height: 55px;
-}
+/* choose Wallet */
 
-.nominal-icon {
-  font-size: 25px;
-  margin: auto;
-  margin-right: 10px;
-  margin-left: 0;
-  color: #8c8c8c;
-}
-
-.input-content {
-  border: none !important;
-  font-size: 16px !important;
-  border-bottom: 0.5px solid #c0c0c0 !important;
-  text-align: left !important;
-}
-
-.input-nominal {
-  font-size: 25px;
-  margin-top: 3px;
-}
-
-.icon-choose,
-.icon-note,
-.icon-date {
-  width: 35px;
-  height: 35px;
-  margin: auto;
-  margin-right: 10px;
-  margin-left: 0;
-}
-
-.icon-note,
-.icon-date {
-  width: 30px;
-  height: 30px;
-  margin-left: 3px;
-}
-
-.input-wrap-date {
-  margin: auto;
-  width: 75%;
-  height: 55px;
-}
-
-.date-addTransaction {
-  height: 55px;
-  width: 238px;
-}
-
-.buttonWrap-saveTransaction {
-  margin-top: 50px;
+.chooseWallet-wrap {
   text-align: center;
-
-  
 }
 
-.button-saveTransaction {
-    width: 179px;
-    height: 49px;
-    font-size: 16px;
-    font-weight: 500px;
-  
-    background: #ffffff;
-    border: 0.5px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.cw-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #7d7d7d;
+}
+
+.cw-title {
+  margin-top: 8px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #363636;
 }
