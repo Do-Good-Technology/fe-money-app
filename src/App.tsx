@@ -9,6 +9,7 @@ import Settings from "./profile/Settings";
 import AccountSettings from "./profile/AccountSettings";
 
 import Addtransaction from "./home/Addtransaction";
+import ForgotPassword from "./auth/ForgotPassword";
 import Register from "./auth/Register";
 import Login from "./auth/Login";
 import Home from "./home/Home";
@@ -20,6 +21,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/forgotPassword">
+            <ForgotPassword />
+          </Route>
           <Route path="/changePassword">
             <ChangePassword />
           </Route>
